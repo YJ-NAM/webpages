@@ -13,17 +13,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-<script type="text/javascript">
-	
-	function javaproject_window() {
-		window.open("https://github.com/ndj111/subway_project", "Subway 프로젝트")
-	}
-
-	function portfolio_window() {
-		window.open("https://github.com/YJ-NAM/Portfolio.git", "포트폴리오")
-	}
-	
-</script>
 <!-- portfolio iframe 내부 contents -->
 <style type="text/css">
 
@@ -51,7 +40,7 @@ body {
 	text-shadow: 0.1px 1px 1px gray;
 }
 
-/* 자세한 내용을 보기 원하시면 이미지를 클릭하세요.  */
+/* 자세한 내용을 보기 원하시면 이미지를 클릭하세요. */
 #containerBase .portfolio_contents p{
 	font-size: 15px;
 	text-indent: 1em;
@@ -71,85 +60,46 @@ body {
 	justify-items: center;
 }
 
-#containerBase .grid-container .grid-item1 {
+#containerBase .grid-container .grid-item {
 	background-color: #f9f5fa;
 	padding: 20px;
 	-webkit-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
 	-moz-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
 	box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
-
 }
 
 /* 포트폴리오 이미지 */
-#containerBase .grid-container .grid-item1 img {
+#containerBase .grid-container .grid-item a img {
 	width: 100%;
-	opacity: 0.7; 
-	
 }
 
-#containerBase .grid-container .grid-item1 img:hover {
+/* 홀수번째 포트폴리오 - hover 시 translate 위치가 다름 */
+#containerBase .grid-container .grid-item:nth-child(odd) a img:hover {
 	cursor: pointer;
 	position: relative;
 	width: 100%;
-	transform: scale(1.7) translate(140px, 70px);
+	transform: scale(1.5) translate(30%, 20%);
 	object-fit: cover;
 	transition: 1s;
-	opacity: 1; 
-	z-index: 0;
-	
 }
 
-#containerBase .grid-container .grid-item1 h4 {
-	font-size: 30px;
-
-}
-
-#containerBase .grid-container .grid-item1 p {
-	font-size: 16px;
-
-}
-
-/* 포트폴리오 이미지 */
-#containerBase .grid-container .grid-item2 {
-	background-color: #f9f5fa;
-	padding: 20px;
-	-webkit-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
-	-moz-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
-	box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
-
-}
-#containerBase .grid-container .grid-item2 img {
-	width: 100%;
-	opacity: 0.7; 
-	-webkit-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
-	-moz-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
-	box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
-}
-
-#containerBase .grid-container .grid-item2 img:hover {
+/* 짝수번째 포트폴리오 */
+#containerBase .grid-container .grid-item:nth-child(even) a img:hover {
 	cursor: pointer;
 	position: relative;
 	width: 100%;
-	transform: scale(1.7) translate(-140px, 70px);
+	transform: scale(1.5) translate(-30%, 20%);
 	object-fit: cover;
 	transition: 1s;
-	opacity: 1; 
-	z-index: 0;
-
-	
 }
 
-#containerBase .grid-container .grid-item2 h4 {
+#containerBase .grid-container .grid-item h4 {
 	font-size: 30px;
-
 }
 
-#containerBase .grid-container .grid-item2 p {
+#containerBase .grid-container .grid-item p {
 	font-size: 16px;
-
 }
-
-
 
 </style>
 </head>
@@ -160,28 +110,23 @@ body {
 		<p>Click the image for more information.</p>
 	</div>
 	<div class="grid-container">
-		<div class="grid-item1">
-			<img src="photo/javaProject.jpg" alt="javaSwingProject" onclick="javaproject_window()"/>
-
-				<h4>Subway Kiosk Project</h4>
-				<p>Mini Project using Java Swing tools.</p>
-				<p>The first team project I worked on as a team leader with good teammates.</p>
-				<p>Through this project, I could experience what the team project is and learn how to cooperate easily using github. </p>
-				<p>Duration: 08/12/2022 ~ 08/29/2022 </p>
+		<div class="grid-item">
+			<a href="https://github.com/ndj111/subway_project" target="_blank"><img src="photo/javaProject.jpg" alt="javaSwingProject"/></a>
+			<h4>Subway Kiosk Project</h4>
+			<p>Mini Project using Java Swing tools.</p>
+			<p>The first team project I worked on as a team leader with good teammates.</p>
+			<p>Through this project, I could experience what the team project is and learn how to cooperate easily using github. </p>
+			<p>Duration: 08/12/2022 ~ 08/29/2022 </p>
 		</div>
-		<div class="grid-item2">
-			<img src="photo/pofol.PNG" alt="HTML/CSS portfolio" onclick="portfolio_window()"/>
-
-				<h4>Porfolio</h4>
-				<p>The portfolio I made using HTML/CSS/JavaScript.</p>
-				<p>Understanding and applying different layouts in different situations were the hardest part to me. </p>
-				<p>The result was satisfying considering that I have spent only two days for this. </p>
-				<p>Duration: 09/05/2022 ~ 09/07/2022 </p>
-		
+		<div class="grid-item">
+			<a href="http://github.com/YJ-NAM/Portfolio.git" target="_blank"><img src="photo/pofol.PNG" alt="HTML/CSS portfolio"/></a>
+			<h4>Portfolio</h4>
+			<p>The portfolio I made using HTML/CSS.</p>
+			<p>Understanding the concepts of layouts and choosing which layout I have to apply in each page were the hardest part for me. </p>
+			<p>The result was satisfying considering that I have spent only two days for this. </p>
+			<p>Duration: 09/05/2022 ~ 09/07/2022 </p>
 		</div>
-	
 	</div>
 </div>
-
 </body>
 </html>
