@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Yoonji Nam ::: Portfolio ::: </title>
+<!-- Regular Style -->
+<link rel="stylesheet" href="css/Home_css.css" />
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Google icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+<script type="text/javascript">
+	
+	function javaproject_window() {
+		window.open("https://github.com/ndj111/subway_project", "Subway 프로젝트")
+	}
+
+	function portfolio_window() {
+		window.open("https://github.com/YJ-NAM/Portfolio.git", "포트폴리오")
+	}
+	
+</script>
+<!-- portfolio iframe 내부 contents -->
+<style type="text/css">
+
+body {
+	clear: both;
+	display: flex;
+	padding: 20px;
+	text-align: left;
+ 	background: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* 내용 container */
+#containerBase .portfolio_contents {
+	position: absolute;
+	display: inline-block;
+	left: 5%;
+}
+
+/* 내용 - 제목 */
+#containerBase .portfolio_contents h3 {
+ 	font-size: 30px;
+	color: rgb(128, 128, 128);
+	font-weight: bold;
+	text-shadow: 0.1px 1px 1px gray;
+}
+
+/* 자세한 내용을 보기 원하시면 이미지를 클릭하세요.  */
+#containerBase .portfolio_contents p{
+	font-size: 15px;
+	text-indent: 1em;
+}
+
+/* 내용 */
+#containerBase .grid-container {
+	position: absolute;
+  	display: grid;
+  	top: 15%;
+  	left: 5%;
+  	right: 5%;
+    grid-template-columns: 1fr 1fr;
+ 	grid-auto-rows: minmax(100px, auto);
+	gap: 10px 10px;  
+	align-items: center;
+	justify-items: center;
+}
+
+#containerBase .grid-container .grid-item1 {
+	background-color: #f9f5fa;
+	padding: 20px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+	box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+
+}
+
+/* 포트폴리오 이미지 */
+#containerBase .grid-container .grid-item1 img {
+	width: 100%;
+	opacity: 0.7; 
+	
+}
+
+#containerBase .grid-container .grid-item1 img:hover {
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	transform: scale(1.7) translate(140px, 70px);
+	object-fit: cover;
+	transition: 1s;
+	opacity: 1; 
+	z-index: 0;
+	
+}
+
+#containerBase .grid-container .grid-item1 h4 {
+	font-size: 30px;
+
+}
+
+#containerBase .grid-container .grid-item1 p {
+	font-size: 16px;
+
+}
+
+/* 포트폴리오 이미지 */
+#containerBase .grid-container .grid-item2 {
+	background-color: #f9f5fa;
+	padding: 20px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+	box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+
+}
+#containerBase .grid-container .grid-item2 img {
+	width: 100%;
+	opacity: 0.7; 
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+	box-shadow: 1px 1px 5px 0px rgba(138,134,138,1);
+}
+
+#containerBase .grid-container .grid-item2 img:hover {
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	transform: scale(1.7) translate(-140px, 70px);
+	object-fit: cover;
+	transition: 1s;
+	opacity: 1; 
+	z-index: 0;
+
+	
+}
+
+#containerBase .grid-container .grid-item2 h4 {
+	font-size: 30px;
+
+}
+
+#containerBase .grid-container .grid-item2 p {
+	font-size: 16px;
+
+}
+
+
+
+</style>
+</head>
+<body>
+<div id="containerBase">
+	<div class="portfolio_contents">
+		<h3>&nbsp;Portfolio </h3>
+		<p>Click the image for more information.</p>
+	</div>
+	<div class="grid-container">
+		<div class="grid-item1">
+			<img src="photo/javaProject.jpg" alt="javaSwingProject" onclick="javaproject_window()"/>
+
+				<h4>Subway Kiosk Project</h4>
+				<p>Mini Project using Java Swing tools.</p>
+				<p>The first team project I worked on as a team leader with good teammates.</p>
+				<p>Through this project, I could experience what the team project is and learn how to cooperate easily using github. </p>
+				<p>Duration: 08/12/2022 ~ 08/29/2022 </p>
+		</div>
+		<div class="grid-item2">
+			<img src="photo/pofol.PNG" alt="HTML/CSS portfolio" onclick="portfolio_window()"/>
+
+				<h4>Porfolio</h4>
+				<p>The portfolio I made using HTML/CSS/JavaScript.</p>
+				<p>Understanding and applying different layouts in different situations were the hardest part to me. </p>
+				<p>The result was satisfying considering that I have spent only two days for this. </p>
+				<p>Duration: 09/05/2022 ~ 09/07/2022 </p>
+		
+		</div>
+	
+	</div>
+</div>
+
+</body>
+</html>

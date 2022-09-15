@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+/*************************/
+/* tag reset
+/*************************/
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img { margin: 0; padding: 0; }
+html, body {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body, code, button {
+    font-size: 14px;
+    font-family: '맑은 고딕', 'Malgun Gothic', 'verdana', '굴림', 'Gulim', 'AppleGothic', 'sans-serif';
+    color: #333;
+    letter-spacing: -1px;
+    line-height: 1.5;
+    background: #fff;
+    text-shadow: none;
+    text-decoration: none;
+}
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcfcff+0,d3f1ff+100&1+0,1+62,0.7+68,0+100 */
+	background: -moz-linear-gradient(top,  rgba(252,252,255,1) 0%, rgba(227,245,255,1) 62%, rgba(224,244,255,0.7) 68%, rgba(211,241,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(252,252,255,1) 0%,rgba(227,245,255,1) 62%,rgba(224,244,255,0.7) 68%,rgba(211,241,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(252,252,255,1) 0%,rgba(227,245,255,1) 62%,rgba(224,244,255,0.7) 68%,rgba(211,241,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcff', endColorstr='#00d3f1ff',GradientType=0 ); /* IE6-9 */
+	font-family: 'Raleway', sans-serif;
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+
+b, h1, h2, h3, h4, h5, strong {
+    text-shadow: 0 none;
+}
+
+li {
+    font-family: '맑은 고딕', 'Malgun Gothic', 'verdana', '굴림', 'Gulim', 'AppleGothic', 'sans-serif';
+    list-style: none;
+}
+img, fieldset { border:none; vertical-align:top; }
+table { border-spacing:0; border:0; border-collapse:collapse; }
+th, td { border:0; vertical-align:middle; }
+legend { height:0; width:0; display:none; text-indent:-9999em; }
+caption { visibility:hidden; position:absolute; left:-1060px; top:-1060px; height:0; width:0; display:none; }
+button { padding:0; margin:0; border:0; cursor:pointer; overflow:visible; }
+label { margin:0; padding:0; cursor:pointer; }
+select {
+    padding: 3px 3px 4px 3px;
+    border: 1px solid #ddd;
+}
+
+select,
+option,
+input,
+textarea {
+    font-size: 100%;
+    font-family: '맑은 고딕', 'Malgun Gothic', 'verdana', '굴림', 'Gulim', 'AppleGothic', 'sans-serif';
+    color: #333;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+select:focus,
+option:focus,
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+
+img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+audio {
+    display: none;
+}
+a,
+a:link,
+a:active,
+a:visited {
+    font-size: 14px;
+    font-family: '맑은 고딕', 'Malgun Gothic', 'verdana', '굴림', 'Gulim', 'AppleGothic', 'sans-serif';
+    text-decoration: none;
+    letter-spacing: -1px;
+    color: #333;
+}
+a:hover {
+    text-decoration: none !important;
+    color: #007bff;
+}
+*:focus {
+    outline: none !important;
+}
+
+
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+th,td {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+table th img,
+table td img {
+    vertical-align: middle;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+
+#wrap {
+	position: relative;
+	width: 70%;
+	min-width: 1000px;
+	height: 750px;
+	margin: 100px auto 0 auto;
+	zoom: 1;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7c0f2+0,7cc2ff+100 */
+	background: #f7c0f2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f7c0f2 0%, #7cc2ff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #f7c0f2 0%,#7cc2ff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #f7c0f2 0%,#7cc2ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7c0f2', endColorstr='#7cc2ff',GradientType=0 ); /* IE6-9 */
+	border-radius: 30px;
+	color: white;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	
+}
+
+#wrap:after {
+	content: "";
+	display: block;
+	clear: both;
+	
+}
+
+/* 왼쪽 사이드바 고정부분 */
+#wrap aside {
+	float: left;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#wrap aside p {
+
+}
+
+/* 클라이밍 이미지 */
+#wrap aside p img {
+	display: inherit;
+	width: 200px; 
+	height: auto;
+	overflow: hidden;
+	border-radius: 50%;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	
+/* 	clip-path: circle(50% at 50% 50%);
+ */
+ }
+
+#wrap aside h1 {
+	font-size: 3em;
+	text-shadow: 0.1px 1px 1px gray;
+
+}
+
+#wrap aside h4 {
+	font-size: 1.5em;
+	font-weight: normal;
+	text-shadow: 0.1px 1px 1px gray;
+	
+}
+
+#wrap aside ul {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+}
+
+
+#wrap aside ul > li {
+	clear: both;
+	display: inline-block;
+	padding: 8px;
+}
+
+#wrap aside ul > li > a {
+	font-size: 35px;
+	padding-right: 2px;
+	
+	/* 글자 그라데이션 */
+	background: linear-gradient(to right, #b33ffb, #fc46f2);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+#wrap aside ul > li > a:hover {
+	cursor: pointer;
+	background: linear-gradient(to right, #00467F, #A5CC82);
+	 -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+
+}
+
+#wrap aside ul > li > a > i {}
+
+
+#wrap aside #copyright {
+	position: absolute;
+	bottom: 25px;
+	font-size: 13px;
+	text-align: center;
+	 
+}
+
+#wrap #iframe {
+	width: calc(100% - 300px);
+	height: 100%;
+	border-radius: 30px;
+	background: #fff;
+	float: right;
+    border: none;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* iframe 공간의 container */
+#containerHome {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	
+	/* display 설정 - 완전 가운데 정렬 */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#containerBase {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+
+	
+}
+
+/* 우측 menu 클릭 바 */
+#wrap #menu {
+	position: fixed;
+	top: 100px;
+	right: 50%;
+	margin-right: calc(-35% - 100px - 20px);
+	width: 100px;
+	background: #fff;
+	padding: 2px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	border-radius: 30px;
+	font-family: 'Raleway', sans-seri;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	
+
+}
+
+#wrap #menu span {
+	font-size: 45px;
+	background: linear-gradient(to right, #b33ffb, #fc46f2);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	line-height: 1.5em;
+  	
+}
+
+#wrap #menu span:hover {
+	cursor: pointer;
+	background: linear-gradient(to right, #00467F, #A5CC82);
+	 -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+
+}
+
+#wrap #menu p {
+	margin-top: -10px;
+}
+
+
+
+
+

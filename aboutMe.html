@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Yoonji Nam ::: About Me ::: </title>
+<!-- Regular Style -->
+<link rel="stylesheet" href="css/Home_css.css" />
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Google icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+<!-- aboutMe iframe 내부 contents -->
+<style type="text/css">
+
+body {
+	clear: both;
+	display: flex;
+	text-align: left;
+	padding: 20px;
+ 	background: #fff;
+	font-family: 'Raleway', sans-serif;
+	
+}
+
+/* 내용 container */
+#containerBase .aboutMe_contents {
+	position: absolute;
+	display: inline-block;
+	left: 5%;
+
+}
+
+/* 내용 - 제목 */
+#containerBase .aboutMe_contents h3 {
+ 	font-size: 30px;
+	color: rgb(128, 128, 128);
+	font-weight: bold;
+	text-shadow: 0.1px 1px 1px gray;
+	
+}
+
+/* 자기소개 */
+#containerBase .aboutMe_contents p {
+	width: 50%;
+	color: black;
+	margin: 10px;
+	font-size: 16px;
+
+}
+
+/* 사진 */
+#containerBase .containerImg{
+	position: absolute;
+	display: inline-block;
+	overflow: hidden;
+	top: 76%;
+	left: 4%;
+
+}
+
+#containerBase .containerImg img {
+	width: 40%;
+	margin: 15px;
+	padding: 20px;
+	bottom: 30px;
+	border-radius: 25%;	
+
+}
+
+/* 우측 간단한 소개 사이드바 테이블 // 연보라 */
+#containerBase #briefIntro {
+	position: absolute;
+	display: inline-block;
+	top: 50px;
+	right: 5%;
+	margin: 30px;
+	padding: 15px;
+	width: 350px;
+	background-color: rgb(239, 217, 251);
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+	box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
+}
+
+/* 테이블 헤더 */
+#containerBase #briefIntro tr > th {
+	color: #b33ffb;
+	font-size: 17px;
+	text-align: left;
+	padding-right: 20px;
+	text-shadow: 0.1px 1px 1px gray;
+	
+}
+
+/* 테이블 내용 */
+#containerBase #briefIntro tr > td {
+	color: black;
+	font-size: 16px;
+	text-align: left;
+}
+
+
+</style>
+</head>
+<body>
+<div id="containerBase">
+	<div class="aboutMe_contents">
+		<h3> &nbsp;About Me </h3>
+		<p>I used to work as an ICU(Intensive Care Unit nurse) nurse for more than 3 years at SMC(Samsung Medical Center), one of the best hospitals in South Korea.</p>
+		<p>The time I spent in the hospital was truly precious; however, it made me want to experience a larger world. </p>
+		<p>I saw countless patients dying. Some of them were satisfied with their lives, but most of them weren't.</p>
+		<p>Watching them closely, such realization came to me that life is too short to hesitate and if I don't do what I want, I'll only regret it in the end.</p>
+		<p>So, I decided to quit my job and went to Canada to study English for a while.</p>
+		<p>Communication with diverse people helped widen my perspectives, which has led me to know that life is full of opportunities when I step outside my comfort zone.</p>
+		<p>Recently, I have become interested in Software and Web development which enables us to create something closely related to our life.  </p>
+		<p>Thankfully, studying development has been a delight to me and I'm looking forward to the new challenge ahead as a web developer now. </p>
+	</div>
+	<div class="containerImg">
+		<img src="photo/photo2.jpg" alt="myPhoto" />
+		<img src="photo/photo3.jpg" alt="myPhoto" />
+	</div>
+	<br />
+	<table id="briefIntro">
+		<tr>
+			<th>Age</th>
+			<td>30</td>
+		</tr>
+		<tr>
+			<th>Residence</th>
+			<td>Republic of Korea</td>
+		</tr>			
+		<tr>
+			<th>Address</th>
+			<td>Godeok-ro, Gangdong-gu, Seoul</td>
+		</tr>
+		<tr>
+			<th>e-mail</th>
+			<td>holst15@naver.com</td>
+		</tr>
+		<tr>
+			<th>Phone</th>
+			<td>+082 10 3523 9276</td>
+		</tr>
+	</table>
+	
+</div>
+</body>
+</html>
