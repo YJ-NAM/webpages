@@ -73,13 +73,16 @@ body {
 
 /* 우측 간단한 소개 사이드바 테이블 // 연보라 */
 #containerBase #briefIntro {
+	table-layout: fixed;
 	position: absolute;
 	display: inline-block;
 	top: 50px;
 	right: 5%;
 	margin: 30px;
 	padding: 15px;
-	width: 350px;
+	width: 30%;
+	word-wrap: break-word;
+	overflow: hidden;
 	background-color: rgb(239, 217, 251);
 	border-radius: 10px;
 	-webkit-box-shadow: 1px 1px 1px 1px rgba(117,95,120,1);
@@ -90,6 +93,7 @@ body {
 /* 테이블 헤더 */
 #containerBase #briefIntro tr > th {
 	color: #b33ffb;
+	width: 30%;
 	font-size: 17px;
 	text-align: left;
 	padding-right: 20px;
@@ -99,6 +103,7 @@ body {
 
 /* 테이블 내용 */
 #containerBase #briefIntro tr > td {
+	object-fit: contain;
 	color: black;
 	font-size: 16px;
 	text-align: left;
